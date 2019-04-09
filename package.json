@@ -1,0 +1,19 @@
+{
+  "name": "sipgateio-basicauth-node",
+  "version": "1.0.0",
+  "description": "sipgate.io basic auth example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "sipgate",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "license": "The Unlicense",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "js-base64": "^2.5.1"
+  }
+}
