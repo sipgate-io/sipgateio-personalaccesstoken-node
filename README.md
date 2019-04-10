@@ -111,8 +111,12 @@ This project is licensed under **The Unlicense** (see [LICENSE file](./LICENSE))
 ### External Libraries
 This code uses the following external libraries
 
++ js-base64:  
+    Licensed under the [BSD 3-Clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html)  
+    Website: https://github.com/dankogai/js-base64
+
 + axios:  
-    Licensed under the [MIT License](https://opensource.org/licenses/MIT)  
+    Licensed under [The MIT License](https://opensource.org/licenses/MIT)  
     Website: https://github.com/axios/axios
 
 ----
