@@ -1,8 +1,6 @@
 <img src="https://www.sipgatedesign.com/wp-content/uploads/wort-bildmarke_positiv_2x.jpg" alt="sipgate logo" title="sipgate" align="right" height="112" width="200"/>
 
-
 # sipgate.io Node.js Basic Auth example
-
 To demonstrate how to authenticate against the sipgate REST API using HTTP Basic Auth, we query the `/account` endpoint which provides basic account information.
 
 For further information regarding sipgate REST API please visit https://api.sipgate.com/v2/doc
@@ -48,6 +46,8 @@ const requestOptions = {
 ```
 **Note**: Basic Auth requires the credentials to be Base64-encoded. 
 
+> If OAuth should be used for `Authorization` instead of Basic Auth we do not suply the auth object in the request options. Instead we set the authorization header to `Bearer` followed by a space and the access token: ```Authorization: `Bearer ${accessToken}`,```. For an example application interacting with the sipgate API using OAuth see our [sipgate.io Node.js OAuth example](https://github.com/sipgate-io/sipgateio-oauth-node).
+
 We use axios for request generation and execution.
 The request URL consists of the base url defined above and the endpoint `/account`.
 This example prints the response body to the console.
@@ -59,10 +59,6 @@ axios(`${baseURL}/account`, requestOptions)
 	})
 	.catch(error => console.log('Error: ', error.message));
 ```
-
-
-
-
 
 
 ### Basic Auth
@@ -80,7 +76,6 @@ The Base64-encoded string would be `Sm9objp0b3BzZWNyZXQ=`.
 The complete header would look like:
 
 `Authorization: Basic Sm9objp0b3BzZWNyZXQ=`
-
 
 
 ### Common Issues
