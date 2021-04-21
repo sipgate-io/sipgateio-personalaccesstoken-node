@@ -28,6 +28,7 @@ Change `tokenId` and `token` in index.js:
 const tokenId = "YOUR_SIPGATE_TOKEN_ID";
 const token = "YOUR_SIPGATE_TOKEN";
 ```
+The token should have the `account:read` scope.
 
 Run the application:
 
