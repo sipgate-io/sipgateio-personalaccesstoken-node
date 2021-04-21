@@ -1,14 +1,14 @@
 {
-  "name": "sipgateio-basicauth-node",
+  "name": "sipgateio-personalaccesstoken-node",
   "version": "1.0.0",
-  "description": "A demonstration of how to use basic auth in the sipgate REST-API",
+  "description": "A demonstration of how to use personal access token with the sipgate REST-API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
   "author": "sipgate.io Team <io-team@sipgate.de>",
-  "repository": "https://github.com/sipgate-io/sipgateio-basicauth-node",
+  "repository": "https://github.com/sipgate-io/sipgateio-personalaccesstoken-node",
   "engines": {
     "node": "10.15.3"
   },

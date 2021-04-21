@@ -2,9 +2,12 @@ const base64 = require('js-base64').Base64;
 const axios = require('axios');
 
 const baseURL = 'https://api.sipgate.com/v2';
-const username = 'YOUR_SIPGATE_EMAIL';
-const password = 'YOUR_SIPGATE_PASSWORD';
-const base64EncodedCredentials = base64.encode(`${username}:${password}`);
+
+const tokenId = 'YOUR_SIPGATE_TOKEN_ID';
+const token = 'YOUR_SIPGATE_TOKEN';
+
+const base64EncodedCredentials = base64.encode(`${tokenId}:${token}`);
+
 const requestOptions = {
 	method: 'GET',
 	headers: {
