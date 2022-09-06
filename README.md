@@ -22,12 +22,8 @@ Install dependencies:
 $ npm install
 ```
 
-Change `tokenId` and `token` in index.js:
+Create the `.env` file by copying the `.env.example`. Set the values according to the comment above each variable.
 
-```javascript
-const tokenId = "YOUR_SIPGATE_TOKEN_ID";
-const token = "YOUR_SIPGATE_TOKEN";
-```
 The token should have the `account:read` scope.
 
 Run the application:

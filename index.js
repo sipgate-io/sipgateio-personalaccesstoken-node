@@ -1,10 +1,8 @@
 const base64 = require('js-base64').Base64;
 const axios = require('axios');
 
-const baseURL = 'https://api.sipgate.com/v2';
-
-const tokenId = 'YOUR_SIPGATE_TOKEN_ID';
-const token = 'YOUR_SIPGATE_TOKEN';
+require('dotenv').config();
+const {baseURL, tokenId, token } = process.env;
 
 const base64EncodedCredentials = base64.encode(`${tokenId}:${token}`);
 
